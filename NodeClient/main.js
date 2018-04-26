@@ -17,7 +17,7 @@ let hubConnection = new signalR.HubConnection(url, {
         logger: signalR.LogLevel.Trace,                        
 });
 
-hubConnection.onreceive = data => console.log(`message from server : ${data}`);
+hubConnection.on("serverMessage", data => console.log(`got message from server: ${data}`));
 
 hubConnection.onclose = err => console.log(`connection closed: ${err}`);
 
