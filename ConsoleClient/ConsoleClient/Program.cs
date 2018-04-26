@@ -18,6 +18,8 @@ namespace ConsoleClient
                     .WithConsoleLogger(LogLevel.Trace)
                     .Build();
 
+                hubConnection.On<dynamic>("serverMessage", message => Console.WriteLine($"server message : {message}"));
+
                 await hubConnection.StartAsync();
                 
                 Console.WriteLine("Connected to signalR server...");
