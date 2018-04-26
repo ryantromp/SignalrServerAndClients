@@ -54,6 +54,9 @@
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client">
       <Version>1.0.0-preview2-final</Version>
     </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.5.0-preview2-26406-04</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
