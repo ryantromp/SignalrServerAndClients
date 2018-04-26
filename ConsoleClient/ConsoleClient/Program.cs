@@ -23,7 +23,7 @@ namespace ConsoleClient
                 Console.WriteLine("Connected to signalR server...");
                 Console.ReadKey();
             }
-            catch (HubException exception)
+            catch (Exception exception)
             {
                 Console.WriteLine(exception);
                 Console.ReadKey();
